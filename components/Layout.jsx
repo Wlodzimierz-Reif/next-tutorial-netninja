@@ -1,13 +1,17 @@
 import Footer from "./Footer";
+import HeadComponent from "./meta/HeadComponent";
 import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="content">
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <HeadComponent />
+      <div className="content">
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </>
   );
 };
 
