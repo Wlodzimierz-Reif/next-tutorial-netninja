@@ -2,6 +2,7 @@
 // thats why it's in the /ninjas folder
 // when we combine it with <Link href={/ninjas/<id>} /> we can navigte throough the page
 
+
 // allows to fetch all [id] and based on those it will generate all routes and pages in build time
 // don't forget the export
 export const getStaticPaths = async () => {
